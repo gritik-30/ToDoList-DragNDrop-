@@ -1,5 +1,7 @@
 .main {
     height: 100vh;
+    width: 100vw;
+
 }
 
 .sidebar {
@@ -35,9 +37,13 @@
     /* height: 100vh; */
 }
 
+.deleteBtn {
+    cursor: pointer;
+}
 
-
-
+.updateBtn {
+    cursor: pointer;
+}
 
 
 .example-list {

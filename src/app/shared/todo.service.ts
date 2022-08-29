@@ -12,11 +12,11 @@ export class TodoService {
   }
 
   setProgress(progress: any) {
-    localStorage.setItem('todo', JSON.stringify(progress));
+    localStorage.setItem('progress', JSON.stringify(progress));
   }
 
   setDone(done: any) {
-    localStorage.setItem('todo', JSON.stringify(done));
+    localStorage.setItem('done', JSON.stringify(done));
   }
 
   getTodo() {
