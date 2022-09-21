@@ -22,7 +22,7 @@ export class ToDoComponent implements OnInit {
   progressEmpty: boolean = false;
   doneEmpty: boolean = false;
 
-  showEditBox: boolean = false;
+  showEditBox!: boolean;
   updateIndex!: number;
 
   todoForm = this.fb.group({
@@ -35,6 +35,7 @@ export class ToDoComponent implements OnInit {
 
 
   ngOnInit(): void {
+    this.showEditBox = false;
     this.todo = this.todoservice.getTodo();
     this.progress = this.todoservice.getProgress();
     this.done = this.todoservice.getDone();

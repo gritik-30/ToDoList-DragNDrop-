@@ -1,7 +1,7 @@
 <body>
   <div class="row main">
     <div class="col-3 sidebar">
-        <div class="addForm" *ngIf="!showEditBox">
+        <div class="addForm" >
             <form class="example-form" [formGroup]="todoForm">
                 <mat-form-field class="example-full-width" appearance="fill">
                   <mat-label>Task</mat-label>
@@ -51,7 +51,7 @@
     <div class="col-9 content">
       <div class="row">
         <div class="col-md-4 array">
-          <div class="head">TO DO LIST</div>
+          <div class="head mb-2">TO DO LIST</div>
           <div class="list">
             <div
               cdkDropList
@@ -88,7 +88,7 @@
           </div>
         </div>
         <div class="col-md-4 array">
-          <div class="head">IN PROGRESS</div>
+          <div class="head mb-2">IN PROGRESS</div>
           <div class="list">
             <div
               cdkDropList
@@ -129,7 +129,7 @@
           </div>
         </div>
         <div class="col-md-4 array">
-          <div class="head">DONE</div>
+          <div class="head mb-2">DONE</div>
           <div class="list">
             <div
               cdkDropList
